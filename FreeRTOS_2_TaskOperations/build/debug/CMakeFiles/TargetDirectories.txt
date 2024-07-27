@@ -1,0 +1,5 @@
+/home/arvliv/stm32_test/FreeRTOS_2_TaskOperations/build/debug/CMakeFiles/FreeRTOS_2_TaskOperations.dir
+/home/arvliv/stm32_test/FreeRTOS_2_TaskOperations/build/debug/CMakeFiles/edit_cache.dir
+/home/arvliv/stm32_test/FreeRTOS_2_TaskOperations/build/debug/CMakeFiles/rebuild_cache.dir
+/home/arvliv/stm32_test/FreeRTOS_2_TaskOperations/build/debug/cmake/stm32cubemx/CMakeFiles/edit_cache.dir
+/home/arvliv/stm32_test/FreeRTOS_2_TaskOperations/build/debug/cmake/stm32cubemx/CMakeFiles/rebuild_cache.dir

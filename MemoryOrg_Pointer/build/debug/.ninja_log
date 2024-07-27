@@ -1,0 +1,27 @@
+# ninja log v5
+2	265	1721997317405018922	CMakeFiles/MemoryOrg_Pointer.dir/Core/Src/stm32f7xx_hal_msp.c.obj	cacd5e5c6d01f95a
+2	302	1721997317441018923	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c.obj	85571b9d4ef21900
+3	332	1721997317470018924	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c.obj	d80dd8c1f8ee2a4
+2	337	1721997317476018924	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c.obj	6e44367009dae715
+2	400	1721997317539018926	CMakeFiles/MemoryOrg_Pointer.dir/Core/Src/stm32f7xx_it.c.obj	6f62ac426b8982d6
+2	412	1721997317550018926	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c.obj	21cfc5226a8ed4de
+1	449	1721997317588018928	CMakeFiles/MemoryOrg_Pointer.dir/Core/Src/main.c.obj	951161b01f70ff5d
+2	479	1721997317617018928	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c.obj	d8e4170c47fc736b
+2	485	1721997317621018929	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c.obj	1d1d801353a7ada8
+4	497	1721997317635018929	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c.obj	d19bb779788c262f
+485	546	1721997317688018931	CMakeFiles/MemoryOrg_Pointer.dir/Core/Src/sysmem.c.obj	9be392b0f584be48
+7	561	1721997317701018931	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c.obj	6564d55c00608b35
+497	575	1721997317715018931	CMakeFiles/MemoryOrg_Pointer.dir/Core/Src/syscalls.c.obj	9fc2890e353f8a64
+547	582	1721997317720018932	CMakeFiles/MemoryOrg_Pointer.dir/startup_stm32f767xx.s.obj	ba69c5c578b10a9b
+337	640	1721997317778018933	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c.obj	4a992e85a49be9d1
+9	654	1721997317793018934	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c.obj	eb2052ef130daa29
+302	673	1721997317812018934	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c.obj	1b7fd03851cbc4fc
+11	720	1721997317856018936	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c.obj	2f3a69c9395c3e3f
+14	730	1721997317869018936	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c.obj	7557b5bd2cac67d7
+414	744	1721997317882018937	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c.obj	a6a0fff68642bb05
+266	773	1721997317913018937	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c.obj	4cdc9fe25bef8bca
+332	783	1721997317922018938	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c.obj	5226fd048c1dfbce
+450	821	1721997317961018939	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c.obj	254abd06d324c79
+479	827	1721997317966018939	CMakeFiles/MemoryOrg_Pointer.dir/Core/Src/system_stm32f7xx.c.obj	d465756340075770
+401	918	1721997318058018942	CMakeFiles/MemoryOrg_Pointer.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c.obj	bfabc199964543e7
+918	992	1721997318132018944	MemoryOrg_Pointer.elf	19a1d68cc212a82f

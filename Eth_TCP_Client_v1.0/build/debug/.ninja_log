@@ -1,0 +1,26 @@
+# ninja log v5
+3	395	1721998296873048813	CMakeFiles/Eth_TCP_Client_v1.0.dir/Core/Src/stm32f7xx_hal_timebase_tim.c.obj	9278c3f7e733daf9
+12	417	1721998296895048814	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c.obj	ae77d3464c214cc9
+3	443	1721998296920048814	CMakeFiles/Eth_TCP_Client_v1.0.dir/Core/Src/stm32f7xx_hal_msp.c.obj	ebeff033f55fabec
+13	466	1721998296942048815	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c.obj	5c8334d9c8334e48
+7	477	1721998296951048815	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c.obj	7d07fe4da2c478c5
+3	488	1721998296965048816	CMakeFiles/Eth_TCP_Client_v1.0.dir/Core/Src/freertos.c.obj	69794f2774d829f1
+5	498	1721998296976048816	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c.obj	4a14baa66c8c4c24
+3	538	1721998297014048817	CMakeFiles/Eth_TCP_Client_v1.0.dir/Core/Src/stm32f7xx_it.c.obj	c7da1dbb385c7b6f
+3	560	1721998297037048818	CMakeFiles/Eth_TCP_Client_v1.0.dir/Core/Src/main.c.obj	55a110931d1aa023
+16	570	1721998297047048818	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c.obj	494c1a6b251e7198
+8	575	1721998297051048818	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c.obj	a25595c2e84c5626
+3	580	1721998297058048819	CMakeFiles/Eth_TCP_Client_v1.0.dir/LWIP/App/lwip.c.obj	f7316b850a5a383d
+8	760	1721998297235048824	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c.obj	c75c3fbee3072cfb
+395	840	1721998297317048827	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c.obj	5d4879a2bd4aabaa
+466	861	1721998297338048827	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c.obj	8e7bc147ea30fc13
+498	872	1721998297348048827	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c.obj	f5e81612a30d3109
+444	895	1721998297373048828	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c.obj	3d5b16d900fb053a
+417	988	1721998297466048831	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c.obj	14b6e72c896007b6
+489	1035	1721998297512048832	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c.obj	4a2b87f24d1bd3e3
+580	1075	1721998297553048834	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart_ex.c.obj	6d09ee63c38b5b4f
+570	1082	1721998297559048834	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c.obj	89a0c6c9ff16bba1
+760	1082	1721998297560048834	CMakeFiles/Eth_TCP_Client_v1.0.dir/Core/Src/system_stm32f7xx.c.obj	a928383c5eef2225
+575	1174	1721998297650048837	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_uart.c.obj	3432ae46c2bbb343
+478	1186	1721998297664048837	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c.obj	b61862ae5702d65
+561	1191	1721998297669048837	CMakeFiles/Eth_TCP_Client_v1.0.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c.obj	c0fe57cc78a0bac8

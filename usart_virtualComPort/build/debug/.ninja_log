@@ -1,0 +1,26 @@
+# ninja log v5
+7	324	1721998023788040479	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_gpio.c.obj	83acfbe1fb295183
+2	391	1721998023855040481	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_cortex.c.obj	e766542ab70602a7
+2	411	1721998023874040482	CMakeFiles/USART_VirtualComPort.dir/Core/Src/stm32f7xx_it.c.obj	45ad001df552ff07
+2	421	1721998023886040482	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim.c.obj	bbc4406a30c8bf27
+7	446	1721998023905040483	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash_ex.c.obj	a3a4372d01248945
+2	471	1721998023935040484	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_tim_ex.c.obj	f34d654bd82636dc
+1	481	1721998023945040484	CMakeFiles/USART_VirtualComPort.dir/Core/Src/main.c.obj	4e37e943cb7f3ead
+5	488	1721998023950040484	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc_ex.c.obj	2fd4f000a784f25b
+6	565	1721998024025040486	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_flash.c.obj	a1e1f9e5ff5f3dd0
+4	568	1721998024031040486	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_rcc.c.obj	38be81f9554f6242
+2	575	1721998024040040487	CMakeFiles/USART_VirtualComPort.dir/Core/Src/stm32f7xx_hal_msp.c.obj	70aee76f3ab897c6
+12	579	1721998024043040487	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma_ex.c.obj	419c267cdde0fdd3
+568	603	1721998024070040488	CMakeFiles/USART_VirtualComPort.dir/startup_stm32f767xx.s.obj	22a7eec83dbc12da
+488	614	1721998024078040488	CMakeFiles/USART_VirtualComPort.dir/Core/Src/sysmem.c.obj	e085b3252a345db7
+10	627	1721998024090040488	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_dma.c.obj	5a47591a6110c00
+565	657	1721998024123040489	CMakeFiles/USART_VirtualComPort.dir/Core/Src/syscalls.c.obj	62fb89f4ca34f49
+2	674	1721998024138040490	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_usart.c.obj	9451c44f7114655a
+325	760	1721998024219040492	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr.c.obj	7d77784782913ff7
+481	761	1721998024223040492	CMakeFiles/USART_VirtualComPort.dir/Core/Src/system_stm32f7xx.c.obj	392198fe51a9ee45
+446	768	1721998024232040493	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c_ex.c.obj	362f20dcf0e375b6
+413	793	1721998024258040493	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal.c.obj	cdac4770f8d436e1
+391	796	1721998024260040493	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_pwr_ex.c.obj	58ba6054d0966665
+473	833	1721998024298040495	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_exti.c.obj	95921b236f084796
+421	931	1721998024397040498	CMakeFiles/USART_VirtualComPort.dir/Drivers/STM32F7xx_HAL_Driver/Src/stm32f7xx_hal_i2c.c.obj	a6062e3404a27c8b
+931	1020	1721998024484040500	USART_VirtualComPort.elf	3ef05af4d34f914d

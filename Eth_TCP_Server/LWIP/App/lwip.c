@@ -31,12 +31,15 @@
 
 /* USER CODE END 0 */
 /* Private function prototypes -----------------------------------------------*/
+static void ethernet_link_status_updated(struct netif *netif);
+static void Ethernet_Link_Periodic_Handle(struct netif *netif);
 /* ETH Variables initialization ----------------------------------------------*/
 void Error_Handler(void);
 
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
+uint32_t EthernetLinkTimer;
 
 /* Variables Initialization */
 struct netif gnetif;
@@ -73,7 +76,7 @@ void MX_LWIP_Init(void)
 /* USER CODE BEGIN IP_ADDRESSES */
 /* USER CODE END IP_ADDRESSES */
 
-  /* Initilialize the LwIP stack without RTOS */
+  /* Initialize the LwIP stack without RTOS */
   lwip_init();
 
   /* IP addresses initialization without DHCP (IPv4) */
@@ -87,21 +90,11 @@ void MX_LWIP_Init(void)
   /* Registers the default network interface */
   netif_set_default(&gnetif);
 
-  if (netif_is_link_up(&gnetif))
-  {
-    /* When the netif is fully configured this function must be called */
-    netif_set_up(&gnetif);
-  }
-  else
-  {
-    /* When the netif link is down this function must be called */
-    netif_set_down(&gnetif);
-  }
+  /* We must always bring the network interface up connection or not... */
+  netif_set_up(&gnetif);
 
   /* Set the link callback function, this function is called on change of link status*/
-  netif_set_link_callback(&gnetif, ethernetif_update_config);
-
-  /* Create the Ethernet link handler thread */
+  netif_set_link_callback(&gnetif, ethernet_link_status_updated);
 
 /* USER CODE BEGIN 3 */
 
@@ -114,6 +107,26 @@ void MX_LWIP_Init(void)
 /* USER CODE BEGIN 4 */
 /* USER CODE END 4 */
 #endif
+
+/**
+  * @brief  Ethernet Link periodic check
+  * @param  netif
+  * @retval None
+  */
+static void Ethernet_Link_Periodic_Handle(struct netif *netif)
+{
+/* USER CODE BEGIN 4_4_1 */
+/* USER CODE END 4_4_1 */
+
+  /* Ethernet Link every 100ms */
+  if (HAL_GetTick() - EthernetLinkTimer >= 100)
+  {
+    EthernetLinkTimer = HAL_GetTick();
+    ethernet_link_check_state(netif);
+  }
+/* USER CODE BEGIN 4_4 */
+/* USER CODE END 4_4 */
+}
 
 /**
  * ----------------------------------------------------------------------
@@ -137,8 +150,29 @@ void MX_LWIP_Process(void)
   /* Handle timeouts */
   sys_check_timeouts();
 
+  Ethernet_Link_Periodic_Handle(&gnetif);
+
 /* USER CODE BEGIN 4_3 */
 /* USER CODE END 4_3 */
+}
+
+/**
+  * @brief  Notify the User about the network interface config status
+  * @param  netif: the network interface
+  * @retval None
+  */
+static void ethernet_link_status_updated(struct netif *netif)
+{
+  if (netif_is_up(netif))
+  {
+/* USER CODE BEGIN 5 */
+/* USER CODE END 5 */
+  }
+  else /* netif is down */
+  {
+/* USER CODE BEGIN 6 */
+/* USER CODE END 6 */
+  }
 }
 
 #if defined ( __CC_ARM )  /* MDK ARM Compiler */

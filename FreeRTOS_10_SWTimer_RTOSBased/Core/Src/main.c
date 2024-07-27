@@ -103,6 +103,7 @@ void TimerCallback(xTimerHandle xTimer);
   */
 int main(void)
 {
+
   /* USER CODE BEGIN 1 */
 
   /* USER CODE END 1 */
@@ -132,7 +133,6 @@ int main(void)
   char stri[] = "\n---------- Programm started!!! ----------\n\n\r";
   HAL_UART_Transmit(&huart3, (uint8_t*)stri, strlen(stri), HAL_MAX_DELAY); //HAL_MAX_DELAY -> 0xFFFFFFFFU
 
-  /* USER CODE END 2 */
 
   // create timers
   PTHandle = xTimerCreate("timer1", pdMS_TO_TICKS(1000), pdTRUE, (void *) 1, TimerCallback);
@@ -144,6 +144,7 @@ int main(void)
 
   // Start the Schedular
   vTaskStartScheduler();
+  /* USER CODE END 2 */
 
   /* USER CODE BEGIN RTOS_MUTEX */
   /* add mutexes, ... */
@@ -188,6 +189,7 @@ int main(void)
 //  osKernelStart();
 
   /* We should never get here as control is now taken by the scheduler */
+
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -216,11 +218,12 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
   RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 4;
+  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
+  RCC_OscInitStruct.PLL.PLLM = 8;
   RCC_OscInitStruct.PLL.PLLN = 216;
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = 2;
@@ -295,12 +298,14 @@ static void MX_USART3_UART_Init(void)
 static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
+/* USER CODE BEGIN MX_GPIO_Init_1 */
+/* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
-  __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
   __HAL_RCC_GPIOD_CLK_ENABLE();
+  __HAL_RCC_GPIOA_CLK_ENABLE();
 
   /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0|GPIO_PIN_7, GPIO_PIN_RESET);
@@ -318,6 +323,8 @@ static void MX_GPIO_Init(void)
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+/* USER CODE BEGIN MX_GPIO_Init_2 */
+/* USER CODE END MX_GPIO_Init_2 */
 }
 
 /* USER CODE BEGIN 4 */
@@ -369,9 +376,9 @@ void TimerCallback(xTimerHandle xTimer)
   * @retval None
   */
 /* USER CODE END Header_start_normalTask_uart */
-//void start_normalTask_uart(void const * argument)
-//{
-//  /* USER CODE BEGIN 5 */
+void start_normalTask_uart(void const * argument)
+{
+  /* USER CODE BEGIN 5 */
 //
 //  osTimerStart(periodicTimerHandle, 1000); // 1000 ms
 //  /* Infinite loop */
@@ -380,8 +387,8 @@ void TimerCallback(xTimerHandle xTimer)
 //	  HAL_UART_Transmit(&huart3, (uint8_t *)"Sending from UART Task.\n", 23, 100);
 //      osDelay(2000);
 //  }
-//  /* USER CODE END 5 */
-//}
+  /* USER CODE END 5 */
+}
 
 /* USER CODE BEGIN Header_start_normalTask_led */
 /**
@@ -390,9 +397,9 @@ void TimerCallback(xTimerHandle xTimer)
 * @retval None
 */
 /* USER CODE END Header_start_normalTask_led */
-//void start_normalTask_led(void const * argument)
-//{
-//  /* USER CODE BEGIN start_normalTask_led */
+void start_normalTask_led(void const * argument)
+{
+  /* USER CODE BEGIN start_normalTask_led */
 //  /* Infinite loop */
 //  for(;;)
 //  {
@@ -404,28 +411,28 @@ void TimerCallback(xTimerHandle xTimer)
 //
 //      osDelay(20);
 //  }
-//  /* USER CODE END start_normalTask_led */
-//}
+  /* USER CODE END start_normalTask_led */
+}
 
 /* callback_periodicTimer function */
-//void callback_periodicTimer(void const * argument)
-//{
-//  /* USER CODE BEGIN callback_periodicTimer */
+void callback_periodicTimer(void const * argument)
+{
+  /* USER CODE BEGIN callback_periodicTimer */
 //
 //	HAL_UART_Transmit(&huart3, (uint8_t *)"\nSending from PERIODIC Timer.\n", 30, 100);
 //
-//  /* USER CODE END callback_periodicTimer */
-//}
+  /* USER CODE END callback_periodicTimer */
+}
 
 /* callback_onceTimer function */
-//void callback_onceTimer(void const * argument)
-//{
-//  /* USER CODE BEGIN callback_onceTimer */
+void callback_onceTimer(void const * argument)
+{
+  /* USER CODE BEGIN callback_onceTimer */
 //
 //	HAL_GPIO_WritePin(GPIOB, GPIO_PIN_0, 0); // Reset the LED
 //
-//  /* USER CODE END callback_onceTimer */
-//}
+  /* USER CODE END callback_onceTimer */
+}
 
 /**
   * @brief  Period elapsed callback in non blocking mode
